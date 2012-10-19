@@ -1,0 +1,31 @@
+{% extends "base/base.html" %}
+
+{% block title %}Dashboard | VenturePrime{% endblock %}
+
+{% block section_title %}
+<p>
+	<h1>Dashboard</h1>
+</p>
+{% endblock %}
+
+{% block content %}
+
+<p><a href='/accounts/venture/active_interviews/task_summary/'>VENTURE INTERFACE</a></p>
+<p><a href='/accounts/primer/new_interviews/'>PRIMER INTERFACE</a></p>
+<br />
+<br />
+<p>
+	If they're not part of a venture, drop them on <a href='/accounts/primer/new_interviews/'>primer new interviews page</a> (same as above)
+</p>
+<p>
+	If they're part of one venture:
+	<ul>
+		<li>If venture has active interviews, drop them on <a href='/accounts/venture/active_interviews/task_summary/'>active interviews - tasks summary page</a> (same as above)</li>
+		<li>if not, drop them on <a href='/accounts/venture/add_interviews/choose_package/'>add interviews - choose package page</a></li>
+	</ul>
+	If they're part of multiple ventures, show them <a href='/accounts/venture/venture_selection'>venture selection page</a>
+</p>
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base/base.html" %}
+
+{% block title %}Create Account | VenturePrime{% endblock %}
+
+{% block content %}
+<p>
+On clicking sign up, there's a popup box that takes email and password. On submitting, it logs them in, sends them an email for them to confirm their email address, and passes them to this page (they have to confirm their email before they're able to access anything on the venture or primer interface, but it lets them complete account creation)
+</p>
+<h3>Account Creation</h3>
+<p>
+  See below to enable your venture account, or <a href='/accounts/primer/new_interviews/'><strong>skip this section and start priming now!</strong></a>
+</p>
+<p>
+  Are you already part of an existing Venture? Please contact the account creator and have them invite you to the team. In the meantime, you can <a href='/accounts/primer/new_interviews/'>enable your primer account here</a>
+</p>
+<h4>Enable Venture Account</h4>
+<p>
+  Take input for venture name. If they want to invite more people, have them input their email addresses and specify admin permission and whetehr or not they should receive email updates
+</P>
+<p>
+  <a href='/accounts/venture/add_interviews/choose_package/'><strong>Enable Venture Account</strong></a>
+</p>
+
+{% endblock %}

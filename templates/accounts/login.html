@@ -1,0 +1,22 @@
+{% extends "base/base.html" %}
+
+{% block title %}Login | VenturePrime{% endblock %}
+
+{% block content %}
+
+  <form action="" method="post">
+    <label for="email">Email:</label>
+    <input type="text" name="email" value="" id="email">
+    <label for="password">Password:</label>
+    <input type="password" name="password" value="" id="password">
+
+    <input type="submit" value="(don't click me)" />
+    <input type="hidden" name="next" value="{{ url_for('login_home') }}" />
+  </form>
+<p>
+  <a href='{{ url_for('login_home') }}'><strong>Click to Login</strong></a>
+</p>
+<p>
+	(forgot password)
+</p>
+{% endblock %}

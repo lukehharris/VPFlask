@@ -1,0 +1,19 @@
+{% extends "venture_interface/add_interviews_base.html" %}
+
+{% block title %}Add Interviews - Choose a Package | VenturePrime{% endblock %}
+
+{% block section_title %}
+<p>
+	<h1>Add Interviews - Choose a Package</h1>
+</p>
+{% endblock %}
+
+{% block sub_sub_content %}
+<p>
+	User specifies session name and chooses how many interviews they'd like to purchase - discounts in bulk. Shows how many interview credits they've purchased. After picking a package they proceed to <a href='/accounts/venture/add_interviews/create_screener/'>create a screener</a>
+</p>
+<p>
+	If the user has just created an account, give them an interview credit and have a prominent notifcation on the top of the screen that says something like "Your Venture has been successfully created. You've been granted an interview credit for your free trial! You can also apply this credit toward one of the below packages"
+</p>
+
+{% endblock %}
