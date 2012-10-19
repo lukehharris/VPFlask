@@ -1,1 +1,1 @@
-web: python ventureprime.py
+web: python ventureprime.py -b 0.0.0.0:$PORT
